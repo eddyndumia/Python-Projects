@@ -25,6 +25,7 @@ if syms:
     
 # Now i go ahead and specify the password length as well as the number of passwords i want the generator to generate
 
+
 length = 10
 amount = 10
 
