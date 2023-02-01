@@ -45,5 +45,18 @@ def googleDict(dict, search_term):
          return dict[search_term]
      return 'term does not exist'
     
-
 print(googleDict(myDict, 'school'))
+
+
+## traversing two
+
+dict2 = {'a':'apple','b':'boy','c':'cat','d':'dog'}
+
+def traverseDict (dict, value):
+     #iterate this
+     for keys in dict2:
+          if dict2[keys] == value:
+               return keys, value
+     return 'no such value'
+
+print(traverseDict(dict2, 'cat')) 
