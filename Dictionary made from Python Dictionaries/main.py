@@ -38,13 +38,12 @@ print(words_dict["cat"])
 
 # lets say we have a dictionary of words like a real dictionary, and we wanted to lookup the meaning of a certain keyword
 
-myDict = {'name':'Eddy','school':'JKUAT'}
+myDict = {'name':'Edddy','school':'JKUAT', 'area':' '}
 
-def searchDict(dict, search_term):
-     for value in dict:
-          if dict[value] == search_term:
-               return value, search_term
-     return 'no such term'
-     
-search_results = searchDict(myDict, 'name')
-print(search_results)
+def googleDict(dict, search_term):
+     if search_term in dict:
+         return dict[search_term]
+     return 'term does not exist'
+    
+
+print(googleDict(myDict, 'school'))
