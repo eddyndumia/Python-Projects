@@ -16,8 +16,8 @@
  """
 
 
-
-words_dict = {"elephant":"a big animal","dog":"a humans pet animal","goat":"humans meat animal"}
+words_dict = {"elephant": "a big animal",
+              "dog": "a humans pet animal", "goat": "humans meat animal"}
 
 print(words_dict["elephant"])
 
@@ -33,3 +33,18 @@ print(words_dict)
 words_dict["cat"] = "an animal with claws and a tail"
 
 print(words_dict["cat"])
+
+# traversing a dictionary
+
+# lets say we have a dictionary of words like a real dictionary, and we wanted to lookup the meaning of a certain keyword
+
+myDict = {'name':'Eddy','school':'JKUAT'}
+
+def searchDict(dict, search_term):
+     for value in dict:
+          if dict[value] == search_term:
+               return value, search_term
+     return 'no such term'
+     
+search_results = searchDict(myDict, 'name')
+print(search_results)
