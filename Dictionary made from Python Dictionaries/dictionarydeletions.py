@@ -46,5 +46,12 @@ myDict3.clear()
 
 print(myDict3)
 
+# del method
 
+myDict4 = {'name':'alice','job':'doctor','married?':'no','has kids?':'no','looks good?':'on a good day'}
+
+del myDict4
+
+#if you run the line below , there will be an error since del deletes the whole object
+# print(myDict4)
 
